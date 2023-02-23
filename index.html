@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Калькулятор</h1>
+    <form>
+        <label>Введите первое число: <input type="text" id="num1"></label>
+        <label>Введите второе число: <input type="text" id="num2"></label>
+        <button type="button" onclick="calculate('+')">+</button>
+        <button type="button" onclick="calculate('-')">-</button>
+        <button type="button" onclick="calculate('*')">*</button>
+        <button type="button" onclick="clearValues()">Clear</button>
+        <div class="result">
+            <label>Результат: </label>
+            <input type="text" id="result" readonly>
+        </div>
+    </form>
+</body>
+<script src="app.js"></script>
+</html>
