@@ -1,7 +1,7 @@
 function calculate(operation) {
     let result;
-    const num1 = Number(document.querySelector("num1").value);
-    const num2 = Number(document.querySelector("num2").value);
+    const num1 = Number(document.querySelector("#num1").value);
+    const num2 = Number(document.querySelector("#num2").value);
 
     if (isNaN(num1) || isNaN(num2)) {
         alert("Введите числа");
@@ -20,11 +20,11 @@ function calculate(operation) {
             break;
     }
 
-    document.querySelector("result").value = result;
+    document.querySelector("#result").value = result;
 }
 
 function clearValues() {
-    document.querySelector("num1").value = "";
-    document.querySelector("num2").value = "";
-    document.querySelector("result").value = "";
+    document.querySelector("#num1").value = "";
+    document.querySelector("#num2").value = "";
+    document.querySelector("#result").value = "";
 }
